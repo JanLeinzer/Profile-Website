@@ -1,0 +1,30 @@
+.navbar {
+    display: flex;
+    justify-content: space-around; /* Adjust as needed (e.g., space-between, space-evenly) */
+    align-items: center;
+    padding: 10px; /* Adjust padding as needed */
+    background-color: #f8f9fa; /* Adjust background color as needed */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar button {
+    margin: 0.5rem 0; /* Using rem for margin */
+    font-size: 1rem; /* Using rem for font size */
+}
+
+/* Styles for larger screens */
+@media (min-width: 768px) {
+    .navbar {
+        flex-direction: row; /* Arrange buttons in a row on larger screens */
+        justify-content: space-around;
+        padding: 1rem 2rem; /* Adjust padding for larger screens */
+    }
+
+    .navbar button {
+        margin: 0 0.5rem; /* Adjust margin for larger screens */
+    }
+}
